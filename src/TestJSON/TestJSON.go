@@ -99,8 +99,9 @@ func testJSON001() {
 	a9 := &Address{"Test5", "Stadt Test5", "Land Test5"}
 	a10 := &Address{"Test6", "Stadt Test6", "Land Test6"}
 	a11 := &Address{"Test7", "Stadt Test7", "Land Test7"}
+	a12 := &Address{"Test8", "Stadt Test8", "Land Test8"}
 
-	vc := VCard{"Peter", "Mustermann", []*Address{a1, a2, a3, a4, a5}, "geheim!", base64.StdEncoding.EncodeToString([]byte{0x14, 0x02, 0xba, 0x52, 0xfe, 0x02, 0x00, 0x00, 0x10, 0xde, 0xad, 0xc0, 0xde})}
+	vc := VCard{"Peter", "Mustermann", []*Address{a1, a2, a3, a4, a5,a12}, "geheim!", base64.StdEncoding.EncodeToString([]byte{0x14, 0x02, 0xba, 0x52, 0xfe, 0x02, 0x00, 0x00, 0x10, 0xde, 0xad, 0xc0, 0xde})}
 
 	vc2 := VCard{"Klaus", "Klempner", []*Address{a6}, "Normal", base64.StdEncoding.EncodeToString([]byte{0x88, 0x32, 0x12, 0xde, 0x17, 0x42, 0x01, 0x02, 0x03, 0xde, 0xad, 0xc0, 0xde})}
 
