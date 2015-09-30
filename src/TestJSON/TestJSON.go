@@ -58,6 +58,7 @@ func testHash( str string) {
 	
 	fmt.Printf("Ergebnis: %x\n", hasher.Sum( b ))
 	fmt.Printf("Ergebnis: %d\n", hasher.Sum( b ))
+	fmt.Printf("Test: %q\n", time.Now()) // geändert nur in experimental_001
 	
 	hasher.Reset()
 	
